@@ -29,7 +29,17 @@ main {
     font-size: 26px;
 }
 
-#termperature-table, #more-info-table {
+#termperature-table {
+    /* Let the left table follow its initial width */
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#more-info-table {
+    /* Let the second table extend to the end */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -38,7 +48,7 @@ main {
 }
 
 #more-info-table p {
-    flex: 1;
+    /* Adjust styling as needed */
     display: flex;
     justify-content: left;
     align-items: center;
