@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -7,22 +7,51 @@ body{
 }
 
 main {
-    padding: 0 28%;
+    padding: 0 30%;
 }
 
 #weather-table {
-    margin-top: 20px;
+    margin-top: 10%;
+    width: 100%;
+    color: #000000;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+#weather-header {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensure both divs have same height */
-    width: 100%;
-    color: #fff;
-    background-color: rgb(82, 82, 82);
+    align-items: center;
+}
+
+#current-weather-text {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #515151;
+}
+
+#location-logo {
+    width: 20px;
+}
+
+#city-name {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #515151;
+}
+
+#weather-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 #temperature {
     font-size: 80px;
     font-weight: bold;
+    font-stretch: ultra-condensed;
 }
 
 #real-feel-temperature {
@@ -30,7 +59,6 @@ main {
 }
 
 #termperature-table {
-    /* Let the left table follow its initial width */
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -39,7 +67,6 @@ main {
 }
 
 #more-info-table {
-    /* Let the second table extend to the end */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -48,17 +75,17 @@ main {
 }
 
 #more-info-table p {
-    /* Adjust styling as needed */
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-
-
-.section-heading {
-    text-transform: uppercase;
+.weather-stats {
+    width: 100%;
+    padding: 0;
+    border-bottom: solid 2px rgb(194, 194, 194); 
 }
 
-
-
+.weather-section-heading {
+    text-transform: uppercase;
+}
