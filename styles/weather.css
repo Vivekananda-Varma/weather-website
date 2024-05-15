@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #000000;
 }
 
 .navbar-brand {
@@ -16,8 +16,10 @@ main {
     margin-top: 10%;
     width: 100%;
     color: #000000;
-    background-color: rgb(232, 232, 232);
+    background-color: #121212;
     border-radius: 10px;
+    
+    color: #fff;
 }
 
 #weather-header {
@@ -30,7 +32,7 @@ main {
     text-align: left;
     padding: 10px 20px;
     font-size: 20px;
-    color: #515151;
+    color: #ffffff;
 }
 
 #location-logo {
@@ -41,7 +43,7 @@ main {
     text-align: right;
     padding: 10px 20px;
     font-size: 20px;
-    color: #515151;
+    color: #ffffff;
 }
 
 #weather-wrapper {
@@ -85,9 +87,29 @@ main {
 .weather-stats {
     width: 100%;
     padding: 0;
-    border-bottom: solid 2px rgb(194, 194, 194); 
+    border-bottom: solid 2px rgb(41, 41, 41); 
 }
 
 .weather-section-heading {
     text-transform: uppercase;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+#weather-icon {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px;
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+.weather-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-stats p {
+    margin-right: 10px; /* Add some space between the category and the value */
 }
